@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="assets/js/lib/paper-full.js"></script>
+<link rel="stylesheet" href="circles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<script type="text/paperscript" canvas="myCanvas">
+	for (var x = 0; x < 1700; x+=100) {
+        console.log("Entering X loop");
+        for (var y = 0; y < 1000; y+=100) {
+            // new Path.Circle(new Point(x, y), 10).fillColor = 'purple';
+            var myCircle2 = Path.Circle(new Point(x, y), 10);
+            myCircle2.fillColor = 'purple';
+        }     
+    }
+</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
